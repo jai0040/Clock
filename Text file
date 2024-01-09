@@ -1,1 +1,23 @@
-Basically this project show you actually time
+(1)Importing Modules:
+The code imports the Tk class from the tkinter module, as well as other elements like Label and mainloop for GUI components.
+ttk module is imported for enhanced widget styles.
+
+(2)Creating Tkinter Window:
+A Tkinter window (root) is created with the title 'Clock'.
+
+(3)Time Function:
+The time function is defined to update the label with the current time.
+It uses the strftime function to format the system time as '%H:%M:%S %p' (hours, minutes, seconds, AM/PM).
+The label (lbl) is configured to display the formatted time.
+The after method schedules the time function to run every 1000 milliseconds (1 second).
+
+(4)Styling the Label Widget:
+The label (lbl) is created with a specified font, background color ('purple'), and foreground color ('white').
+
+(5)Placing the Clock:
+The label is placed at the center of the Tkinter window using pack.
+
+(6)Updating Time:
+The time function is called initially to set up the clock.
+The mainloop method starts the Tkinter event loop, allowing the clock to continuously update.
+When you run this script, it will create a Tkinter window displaying a digital clock with a purple background and white text. The time is updated every second.
